@@ -12,15 +12,16 @@
 		9B29C97F196F0170007BC657 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9B29C97E196F0170007BC657 /* UIKit.framework */; };
 		9B29C985196F0170007BC657 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 9B29C983196F0170007BC657 /* InfoPlist.strings */; };
 		9B29C987196F0170007BC657 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B29C986196F0170007BC657 /* main.m */; };
-		9B29C98B196F0171007BC657 /* FTFAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B29C98A196F0171007BC657 /* FTFAppDelegate.m */; };
+		9B29C98B196F0171007BC657 /* RWSAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B29C98A196F0171007BC657 /* RWSAppDelegate.m */; };
 		9B29C98E196F0171007BC657 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9B29C98C196F0171007BC657 /* Main.storyboard */; };
-		9B29C991196F0171007BC657 /* FTFViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B29C990196F0171007BC657 /* FTFViewController.m */; };
+		9B29C991196F0171007BC657 /* RWSViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B29C990196F0171007BC657 /* RWSViewController.m */; };
 		9B29C993196F0171007BC657 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9B29C992196F0171007BC657 /* Images.xcassets */; };
 		9B29C99A196F0171007BC657 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9B29C999196F0171007BC657 /* XCTest.framework */; };
 		9B29C99B196F0171007BC657 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9B29C97A196F0170007BC657 /* Foundation.framework */; };
 		9B29C99C196F0171007BC657 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9B29C97E196F0170007BC657 /* UIKit.framework */; };
 		9B29C9A4196F0171007BC657 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 9B29C9A2196F0171007BC657 /* InfoPlist.strings */; };
 		9B29C9A6196F0171007BC657 /* ExpandingRowsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B29C9A5196F0171007BC657 /* ExpandingRowsTests.m */; };
+		9BA408BD196F02C800DE0BBE /* RWSGrowingCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 9BA408BC196F02C800DE0BBE /* RWSGrowingCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,17 +43,19 @@
 		9B29C984196F0170007BC657 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		9B29C986196F0170007BC657 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		9B29C988196F0170007BC657 /* ExpandingRows-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ExpandingRows-Prefix.pch"; sourceTree = "<group>"; };
-		9B29C989196F0170007BC657 /* FTFAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FTFAppDelegate.h; sourceTree = "<group>"; };
-		9B29C98A196F0171007BC657 /* FTFAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FTFAppDelegate.m; sourceTree = "<group>"; };
+		9B29C989196F0170007BC657 /* RWSAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RWSAppDelegate.h; sourceTree = "<group>"; };
+		9B29C98A196F0171007BC657 /* RWSAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RWSAppDelegate.m; sourceTree = "<group>"; };
 		9B29C98D196F0171007BC657 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		9B29C98F196F0171007BC657 /* FTFViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FTFViewController.h; sourceTree = "<group>"; };
-		9B29C990196F0171007BC657 /* FTFViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FTFViewController.m; sourceTree = "<group>"; };
+		9B29C98F196F0171007BC657 /* RWSViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RWSViewController.h; sourceTree = "<group>"; };
+		9B29C990196F0171007BC657 /* RWSViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RWSViewController.m; sourceTree = "<group>"; };
 		9B29C992196F0171007BC657 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		9B29C998196F0171007BC657 /* ExpandingRowsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ExpandingRowsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9B29C999196F0171007BC657 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		9B29C9A1196F0171007BC657 /* ExpandingRowsTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ExpandingRowsTests-Info.plist"; sourceTree = "<group>"; };
 		9B29C9A3196F0171007BC657 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		9B29C9A5196F0171007BC657 /* ExpandingRowsTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ExpandingRowsTests.m; sourceTree = "<group>"; };
+		9BA408BB196F02C800DE0BBE /* RWSGrowingCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RWSGrowingCell.h; sourceTree = "<group>"; };
+		9BA408BC196F02C800DE0BBE /* RWSGrowingCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RWSGrowingCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,13 +115,15 @@
 		9B29C980196F0170007BC657 /* ExpandingRows */ = {
 			isa = PBXGroup;
 			children = (
-				9B29C989196F0170007BC657 /* FTFAppDelegate.h */,
-				9B29C98A196F0171007BC657 /* FTFAppDelegate.m */,
+				9B29C989196F0170007BC657 /* RWSAppDelegate.h */,
+				9B29C98A196F0171007BC657 /* RWSAppDelegate.m */,
 				9B29C98C196F0171007BC657 /* Main.storyboard */,
-				9B29C98F196F0171007BC657 /* FTFViewController.h */,
-				9B29C990196F0171007BC657 /* FTFViewController.m */,
+				9B29C98F196F0171007BC657 /* RWSViewController.h */,
+				9B29C990196F0171007BC657 /* RWSViewController.m */,
 				9B29C992196F0171007BC657 /* Images.xcassets */,
 				9B29C981196F0170007BC657 /* Supporting Files */,
+				9BA408BB196F02C800DE0BBE /* RWSGrowingCell.h */,
+				9BA408BC196F02C800DE0BBE /* RWSGrowingCell.m */,
 			);
 			path = ExpandingRows;
 			sourceTree = "<group>";
@@ -196,7 +201,7 @@
 		9B29C96F196F0170007BC657 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				CLASSPREFIX = FTF;
+				CLASSPREFIX = RWS;
 				LastUpgradeCheck = 0510;
 				ORGANIZATIONNAME = "Roundwall Software";
 				TargetAttributes = {
@@ -250,9 +255,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9BA408BD196F02C800DE0BBE /* RWSGrowingCell.m in Sources */,
 				9B29C987196F0170007BC657 /* main.m in Sources */,
-				9B29C991196F0171007BC657 /* FTFViewController.m in Sources */,
-				9B29C98B196F0171007BC657 /* FTFAppDelegate.m in Sources */,
+				9B29C991196F0171007BC657 /* RWSViewController.m in Sources */,
+				9B29C98B196F0171007BC657 /* RWSAppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -457,6 +463,7 @@
 				9B29C9AB196F0171007BC657 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		9B29C9AC196F0171007BC657 /* Build configuration list for PBXNativeTarget "ExpandingRowsTests" */ = {
 			isa = XCConfigurationList;
@@ -465,6 +472,7 @@
 				9B29C9AE196F0171007BC657 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

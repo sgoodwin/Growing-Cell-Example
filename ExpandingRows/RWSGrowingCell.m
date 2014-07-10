@@ -2,33 +2,24 @@
 //  RWSGrowingCell.m
 //  ExpandingRows
 //
-//  Created by Samuel Goodwin on 7/10/14.
-//  Copyright (c) 2014 Roundwall Software. All rights reserved.
-//
 
 #import "RWSGrowingCell.h"
 
 @implementation RWSGrowingCell
 
-- (id)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier
-{
-    self = [super initWithStyle:style reuseIdentifier:reuseIdentifier];
-    if (self) {
-        // Initialization code
-    }
-    return self;
-}
-
 - (void)awakeFromNib
 {
-    // Initialization code
+    [super awakeFromNib];
+    
+    NSTextContainer *container = self.inputField.textContainer;
+    container.widthTracksTextView = YES;
 }
 
-- (void)setSelected:(BOOL)selected animated:(BOOL)animated
+- (void)textViewDidChange:(UITextView *)textView
 {
-    [super setSelected:selected animated:animated];
-
-    // Configure the view for the selected state
+    CGSize size = textView.contentSize;
+    size.height+= 8.0f;
+    [self.delegate growingCell:self didChangeSize:size];
 }
 
 @end

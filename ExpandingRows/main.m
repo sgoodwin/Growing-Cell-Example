@@ -8,11 +8,11 @@
 
 #import <UIKit/UIKit.h>
 
-#import "FTFAppDelegate.h"
+#import "RWSAppDelegate.h"
 
 int main(int argc, char * argv[])
 {
     @autoreleasepool {
-        return UIApplicationMain(argc, argv, nil, NSStringFromClass([FTFAppDelegate class]));
+        return UIApplicationMain(argc, argv, nil, NSStringFromClass([RWSAppDelegate class]));
     }
 }

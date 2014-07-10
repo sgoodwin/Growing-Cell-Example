@@ -2,12 +2,14 @@
 //  RWSGrowingCell.h
 //  ExpandingRows
 //
-//  Created by Samuel Goodwin on 7/10/14.
-//  Copyright (c) 2014 Roundwall Software. All rights reserved.
-//
 
-#import <UIKit/UIKit.h>
+@protocol RWSGrowingCellDelegate;
 
-@interface RWSGrowingCell : UITableViewCell
+@interface RWSGrowingCell : UITableViewCell<UITextViewDelegate>
+@property (nonatomic, weak) IBOutlet UITextView *inputField;
+@property (nonatomic, weak) id<RWSGrowingCellDelegate> delegate;
+@end
 
+@protocol RWSGrowingCellDelegate <NSObject>
+- (void)growingCell:(RWSGrowingCell *)cell didChangeSize:(CGSize)size;
 @end
